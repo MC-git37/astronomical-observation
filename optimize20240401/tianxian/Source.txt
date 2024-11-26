@@ -1,0 +1,33 @@
+TITLE: Pulsar observation
+PROJECT-ID: GZNUA-test01
+
+#PI-INFORMATION:
+####################################
+PI-NAME: ZhaoRS
+PI-EMAIL: zhaors@shao.ac.cn
+PI-TELEPHONE: 15618717746
+PI-INSITITUTE: GZNU
+PI-ADRESS: GZNU
+####################################
+
+#OBSERVER-INFORMATION (input by the Observer)
+####################################
+OBS-NAME: ZhaoRS
+OBS-EMAIL: 201907007@gznu.edu.cn
+OBS-TELEPHONE: 15618717746
+####################################
+
+#TIME OF OBSERVATION (Year-Month-Day)
+OBS-TIME: 2021-10-26
+
+
+
+SOURCE-TABLE:
+###########################################################################################################
+#   NAME          RAJ           DECJ            DM       Pol        MODE              BAND      T-INT   LENGTH
+#                (hms)         (dms)         (cm^-3 pc)   (2/4) (PSR_MODE_NCH_NBIN)   (L,S,C,X)   (s)      (s)
+##########################################################################################################
+01  M31          00:42:44.3         +41:16:07.5                     26.7641  1        search  1024  -        L        1.024e-3  72000
+01  0329          03:32:59.4096   +54:34:43.329   26.7641  1     Search 1024  -        L       1.024e-3  14400
+
+
