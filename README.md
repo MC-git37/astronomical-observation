@@ -1,6 +1,46 @@
-This is an astronomical observation scheduling system, which aims at optimizing the observation plan of the telescope to improve the observation efficiency and quality. The system provides a user-friendly interface, allowing users to select observation targets, set observation parameters and generate observation plans.
-The software is divided into four parts. The first part is the pitch trajectory fitting and sorting interface. When you click browse to select the source file to be observed, click the submit button to draw the pitch trajectory diagram of the radio source. The left part of the display information status bar displays the current stellar universal time information, and the right part displays the simulation time of this trajectory fitting, the antenna serial number currently used and the pitch azimuth information of the first radio source. For the address problem, you can manually enter the longitude dimension in the address input field and then click the tracking button and the new address that can be entered to fit the pitch trajectory of the radio source.
-The second part is the intelligent sorting part. Enter the observation time on the left side at the bottom of the display information status bar and click the import time button. On the right side, enter the minimum pitch value to filter out the part where the pitch value is lower than the input pitch value. Enter the address in the address input part, click the import address and then click the sort button to select the source file to be observed, so that all radio sources in the file can be sorted. On the right side of the status bar, 10 antennas can be sorted by corresponding antennas according to their own needs, that is, the trajectory of the radio source is fitted and sorted by the longitude dimension corresponding to the antenna. For special needs, the manual input function of longitude dimension is designed on the left side of the 10 antennas. When the address needs to be changed, the address of the corresponding antenna can be changed to the input longitude dimension by inputting the longitude dimension in the status bar. The right side of the status bar is displayed by two lines of longitude dimension information, and the longitude dimension of the currently used antenna is displayed in this status bar when sorting. The number of antennas in this part can be expanded according to different array number requirements.
-The third part is the trajectory fitting of calibration sources. When using telescope array to observe, it is necessary to add calibration sources commonly used in astronomical observation for calibration observation as calibration data of target celestial bodies, which can better ensure the accuracy of observed target celestial bodies. When the calibration source needs to be inserted, click Browse in the calibration source canvas and select the calibration source file. After submission, the calibration source with the calibration source at the visible height in the corresponding time period will appear. When making the observation schedule, add the calibration source in the target celestial body before and after the target celestial body to calibrate the flow of the target celestial body.
-The fourth part is uv coverage. Before the operation, set the observation antenna array information, observation source information and observation time in config_uv.ini. After the operation, click the map button in the uv module to get the UV map of the target celestial body with the specified time length. At the same time, a UV coordinate file will be generated to calculate the coverage of UV coordinates, so as to know the performance of the array.
-If you use the relevant materials of this project in your research, please quote my article:A_RADIO_SOURCES_OBSERVATION_PREDICTION_SYSTEM_FOR_TELESCOPE_ARRAY
+A OBSERVATION SCHEDULING SYSTEM FOR RADIO TELESCOPE ARRAY
+===
+This is an astronomical observation scheduling system, which aims at optimizing the observation plan of the telescope to improve the observation efficiency and quality. The system provides a user-friendly interface, allowing users to select observation targets, set observation parameters and generate observation plans.  
+When used, it includes the following functions
+* Generate the pitch value trajectory of the target source in the **SOURCE.TXT** file for 24 hours.
+* Sort the observation order of the target source in the **SOURCE.TXT** file.
+* Generate calibration source trajectory in **dingbiao.txt** file (covering all 24 sky regions).
+* UV coverage prediction for arrays present in **init.txt** file.
+* The above functions can provide results at any time.
+* The plot is created using the matplotlib function in Python.
+  
+Getting started
+===
+  To understand the target source of execution, you can view the built-in observation file(source.txt/dingbiao.txt).To know array information, you can check the init.txt file.
+* After preparing the observation file(source.txt/dingbiao.txt/init.txt), run the main function.
+* **PyQt5** is used as its UI interface, and an error occurs when using it. Please update the corresponding database.
+
+Execute program
+===
+Trajectory fitting
+------
+*  When you click browse to select the source file to be observed, click the submit button to draw the pitch trajectory diagram of the radio source.
+*  The left part of the display information status bar displays the current stellar universal time information, and the right part displays the simulation time of this trajectory fitting, the antenna serial number currently used and the pitch azimuth information of the first radio source.
+*  For the address problem, you can manually enter the longitude dimension in the address input field and then click the tracking button and the new address that can be entered to fit the pitch trajectory of the radio source.
+  
+Intelligent sorting
+------
+* Enter the observation time on the left side at the bottom of the display information status bar and click the import time button.
+* If it is necessary to input the lowest pitch value in the pitch input section, filter out values smaller than this value.
+* When modifying the antenna address, enter the new address in the "Address Input" field to replace the default address.
+* Click the "Sort" button to select the corresponding file and execute it to obtain the sorted trajectory map.
+  
+calibration source
+---
+* After storing the appropriate calibration source in advance in the **dingbiao.txt** file, click the "Browse" button in the lower left corner to select the file and obtain the calibration source covering the entire day area.
+
+uv coverage
+---
+* You can change the start time, end time, step size, array used, and target source of UV coverage in the **init.txt** file
+* Click the "UV" button in the bottom right corner of the interface to obtain the UV fixed time coverage map of the array in the X file.
+
+Credit
+===
+If you use X for research, please indicate:
+* paper **A OBSERVATION SCHEDULING SYSTEM FOR RADIO TELESCOPE ARRAY**
+Before attributing better methods to software development and maintenance, please consider me as a co-author of the dependent publication
