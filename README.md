@@ -37,7 +37,7 @@ calibration source
 uv coverage
 ---
 * You can change the start time, end time, step size, array used, and target source of UV coverage in the **init.txt** file
-* Click the "UV" button in the bottom right corner of the interface to obtain the UV fixed time coverage map of the array in the X file.
+* Click the "UV" button in the bottom right corner of the interface to obtain the UV fixed time coverage map of the array in the **init.txt** file.
 
 Credit
 ===
