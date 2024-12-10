@@ -41,6 +41,6 @@ uv coverage
 
 Credit
 ===
-If you use X for research, please indicate:
+If you use **astronomical observation** for research, please indicate:
 * paper **A OBSERVATION SCHEDULING SYSTEM FOR RADIO TELESCOPE ARRAY**
 Before attributing better methods to software development and maintenance, please consider me as a co-author of the dependent publication
