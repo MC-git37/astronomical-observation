@@ -4,8 +4,8 @@ This is an astronomical observation scheduling system, which aims at optimizing 
 When used, it includes the following functions
 * Generate the pitch value trajectory of the target source in the **SOURCE.TXT** file for 24 hours.
 * Sort the observation order of the target source in the **SOURCE.TXT** file.
-* Generate calibration source trajectory in **dingbiao.txt** file (covering all 24 sky regions).
-* UV coverage prediction for arrays present in **init.txt** file.
+* Generate calibration source trajectory in **source-dingbiao.txt** file (covering all 24 sky regions).
+* UV coverage prediction for arrays present in **config_uv.ini** file.
 * The above functions can provide results at any time.
 * The plot is created using the matplotlib function in Python.
   
@@ -32,12 +32,12 @@ Intelligent sorting
   
 calibration source
 ---
-* After storing the appropriate calibration source in advance in the **dingbiao.txt** file, click the "Browse" button in the lower left corner to select the file and obtain the calibration source covering the entire day area.
+* After storing the appropriate calibration source in advance in the **source-dingbiao.txt** file, click the "Browse" button in the lower left corner to select the file and obtain the calibration source covering the entire day area.
 
 uv coverage
 ---
-* You can change the start time, end time, step size, array used, and target source of UV coverage in the **init.txt** file
-* Click the "UV" button in the bottom right corner of the interface to obtain the UV fixed time coverage map of the array in the **init.txt** file.
+* You can change the start time, end time, step size, array used, and target source of UV coverage in the **config_uv.ini** file
+* Click the "UV" button in the bottom right corner of the interface to obtain the UV fixed time coverage map of the array in the **config_uv.ini** file.
 
 Credit
 ===
