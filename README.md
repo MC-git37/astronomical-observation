@@ -1,4 +1,4 @@
-A OBSERVATION SCHEDULING SYSTEM FOR RADIO TELESCOPE ARRAY
+AN OBSERVATION SCHEDULING SYSTEM FOR RADIO TELESCOPE ARRAY
 ===
 This is an astronomical observation scheduling system, which aims at optimizing the observation plan of the telescope to improve the observation efficiency and quality. The system provides a user-friendly interface, allowing users to select observation targets, set observation parameters and generate observation plans.  
 When used, it includes the following functions
@@ -41,6 +41,6 @@ uv coverage
 
 Credit
 ===
-If you use **astronomical observation** for research, please indicate:
-* paper **A OBSERVATION SCHEDULING SYSTEM FOR RADIO TELESCOPE ARRAY**
+If you use **astronomical observation** for research, please cite:
+* paper **AN OBSERVATION SCHEDULING SYSTEM FOR RADIO TELESCOPE ARRAY**
 Before attributing better methods to software development and maintenance, please consider me as a co-author of the dependent publication
