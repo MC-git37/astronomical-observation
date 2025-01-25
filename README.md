@@ -1,6 +1,6 @@
 AN OBSERVATION SCHEDULING SYSTEM FOR RADIO TELESCOPE ARRAY
 ===
-This is an astronomical observation scheduling system, which aims at optimizing the observation plan of the telescope to improve the observation efficiency and quality. The system provides a user-friendly interface, allowing users to select observation targets, set observation parameters and generate observation plans.  
+This is an astronomical observation scheduling system, which aims at optimizing the observation plan of the telescope to improve the observation efficiency and quality. The system provides a user-friendly interface, allowing users to select observation targets, set observation parameters and generate observation plans.   
 When used, it includes the following functions
 * Generate the pitch value trajectory of the target source in the **SOURCE.TXT** file for 24 hours.
 * Sort the observation order of the target source in the **SOURCE.TXT** file.
@@ -44,3 +44,7 @@ Credit
 If you use **astronomical observation** for research, please cite:
 * paper **AN OBSERVATION SCHEDULING SYSTEM FOR RADIO TELESCOPE ARRAY**
 Before attributing better methods to software development and maintenance, please consider me as a co-author of the dependent publication
+
+Acknowledgement
+===
+The uv coverage module was developed based on an integrated VLBI simulator, namely [VNSIM](https://github.com/ZhenZHAO/VNSIM).
