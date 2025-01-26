@@ -2,7 +2,7 @@ AN OBSERVATION SCHEDULING SYSTEM FOR RADIO TELESCOPE ARRAY
 ===
 This is an astronomical observation scheduling system, which aims at optimizing the observation plan of the telescope to improve the observation efficiency and quality. The system provides a user-friendly interface, allowing users to select observation targets, set observation parameters and generate observation plans.   
 When used, it includes the following functions
-* Generate the pitch value trajectory of the target source in the **SOURCE.TXT** file for 24 hours.
+* Generate the elevation value trajectory of the target source in the **SOURCE.TXT** file for the upcoming 24 hours.
 * Sort the observation order of the target source in the **SOURCE.TXT** file.
 * Generate calibration source trajectory in **source-dingbiao.txt** file (covering all 24 sky regions).
 * UV coverage prediction for arrays present in **config_uv.ini** file.
